@@ -4,7 +4,6 @@ var size = 350;
 var w = window.innerWidth;
 const mediaQuery = "(max-width: 600px)";
 
-// Check if the media query condition is true
 
 btn.addEventListener("click", () => {
   let user_input = document.querySelector("#input_text");
