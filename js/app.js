@@ -1,5 +1,10 @@
 let btn = document.querySelector(".button");
 let qr_code_element = document.querySelector(".qr-code");
+var size = 350;
+var w = window.innerWidth;
+const mediaQuery = "(max-width: 600px)";
+
+// Check if the media query condition is true
 
 btn.addEventListener("click", () => {
   let user_input = document.querySelector("#input_text");
@@ -18,11 +23,12 @@ btn.addEventListener("click", () => {
 
 function generate(user_input) {
   qr_code_element.style = "";
+  size = 220
 
   var qrcode = new QRCode(qr_code_element, {
     text: `${user_input.value}`,
-    width: 350, //128
-    height: 350,
+    width: size,
+    height: size,
     colorDark: "#3BA676",
     colorLight: "#222",
     correctLevel: QRCode.CorrectLevel.H

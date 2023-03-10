@@ -200,3 +200,18 @@ hr {
 .qr-code button:hover {
     background: #3BA676;
 }
+
+@media only screen and (max-width: 2600px) {
+    *{
+        width: 100%;
+    }
+    .landing-page {
+        padding: 0 10px;
+    }
+    ul{
+        gap: 8px;
+    }
+    ul li{
+        width: auto;
+    }
+}
