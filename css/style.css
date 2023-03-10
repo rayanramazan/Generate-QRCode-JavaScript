@@ -82,6 +82,7 @@ ul {
     justify-content: center;
     margin-top: 1rem;
     gap: 10px;
+    list-style: none;
 }
 
 ul li a {
